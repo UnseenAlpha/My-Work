@@ -6,28 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Work</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <section id="app">
-        <h1>Apps</h1>
-        <div class="line"></div>
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/uSFwCm-VvyLwoscipCSJk6r4i-Xw9NaJGdDo7EBmX6k/embed"></iframe>
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/ozytvsXHD3Zo_JQjFBBOXWf6JryvoKZqohCXvg0KdhY/embed"></iframe>
-    </section>
-    <section id="game">
-        <h1>Games</h1>
-        <div class="line"></div>
-        <a href="https://studio.code.org/projects/playlab/UOuF1lxPPiH7I1XBWO5nf8ys96pyNTG1U4sLxFdALJE" target="_blank">
-            <img src="DragonAttack.png"></a>
-        <a href="https://studio.code.org/projects/spritelab/wjBpTXvA99HwS3wXssXdb1SVVQqBoMjDwTkMc3Yu8Xw" target="_blank"><img src="BirdGame.png"></a>
-    </section>
-    <section id="Chatbot">
-        <h1>ChatBot</h1>
-        <div class="line"></div>
-        <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/e99ee1d6-7515-45b4-b466-88ae8f34d239">
-        </iframe>
-    </section>
+    <div class="container">
+        <section id="app">
+            <h1>Apps</h1>
+            <div class="line"></div>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/uSFwCm-VvyLwoscipCSJk6r4i-Xw9NaJGdDo7EBmX6k/embed"></iframe>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/ozytvsXHD3Zo_JQjFBBOXWf6JryvoKZqohCXvg0KdhY/embed"></iframe>
+        </section>
+        <h2>Click on The Games to Explore</h2>
+        <h5>These games are built in GameLab Click on the game to play</h5>
+        <div id="mycarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center>
+                        <a href="https://studio.code.org/projects/playlab/UOuF1lxPPiH7I1XBWO5nf8ys96pyNTG1U4sLxFdALJE" target="_blank">
+                            <img src="DragonAttack.png" class="img-responsive"></a>
+                        <div class="carousel-content">
+                            <p>Dragon Attack</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <a href="https://studio.code.org/projects/spritelab/wjBpTXvA99HwS3wXssXdb1SVVQqBoMjDwTkMc3Yu8Xw" target="_blank">
+                            <img src="BirdGame.png" class="img-responsive"></a>
+                        <div class="carousel-content">
+                            <p>Bird Game</p>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        <a class="right carousel-control" href="#mycarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span></a>
+        <a class="left carousel-control" href="#mycarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span></a>
+            </div>
+        <section id="Chatbot">
+            <h1>ChatBot</h1>
+            <div class="line"></div>
+            <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/e99ee1d6-7515-45b4-b466-88ae8f34d239">
+            </iframe>
+        </section>
+    </div>
 </body>
 
 </html>
